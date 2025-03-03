@@ -1,12 +1,12 @@
 const isProduction = process.env.NODE_ENV === 'production';
 const withPWA = require('next-pwa')({
   dest: 'public',
-  maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, 
+  maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
   register: true,
   skipWaiting: true,
-  disable: process.env.NODE_ENV === 'development', 
+  disable: process.env.NODE_ENV === 'development',
   fallbacks: {
-    document: '/offline' 
+    document: '/offline'
   },
   cacheOnFrontEndNav: true,
   reloadOnOnline: true,
@@ -39,7 +39,7 @@ const withPWA = require('next-pwa')({
       }
     },
     {
-      urlPattern: ({ request }) => 
+      urlPattern: ({ request }) =>
         request.destination === 'style' ||
         request.destination === 'script' ||
         request.destination === 'font' ||
@@ -130,12 +130,12 @@ module.exports = withBundleAnalyzer(withPWA({
     })
     return config;
   },
-  outputFileTracing: true,
+  // outputFileTracing: true,
   outputFileTracingExcludes: {
     '/**/*': ['**/canvas/**']
   },
   reactStrictMode: isProduction? true : false,
-  swcMinify: true,
+  // swcMinify: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -147,5 +147,5 @@ module.exports = withBundleAnalyzer(withPWA({
       },
     ]
   }
-  
+
 }))

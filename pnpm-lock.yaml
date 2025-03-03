@@ -77,7 +77,7 @@ importers:
         version: 3.7.0
       '@langchain/community':
         specifier: ^0.3.6
-        version: 0.3.32(nkdmk65zsfttuzalraf2aoybnq)
+        version: 0.3.32(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.693.0)(@aws-sdk/credential-provider-node@3.750.0)(@azure/search-documents@12.1.0)(@browserbasehq/sdk@2.3.0(encoding@0.1.13))(@browserbasehq/stagehand@1.13.0(@playwright/test@1.50.1)(deepmerge@4.3.1)(dotenv@16.4.7)(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(zod@3.24.2))(@datastax/astra-db-ts@1.5.0)(@huggingface/inference@2.8.1)(@huggingface/transformers@3.3.3)(@ibm-cloud/watsonx-ai@1.5.0(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))))(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(@libsql/client@0.14.0)(@notionhq/client@2.2.16(encoding@0.1.13))(@pinecone-database/pinecone@4.1.0)(@qdrant/js-client-rest@1.13.0(typescript@5.7.3))(@smithy/eventstream-codec@3.1.10)(@smithy/protocol-http@5.0.1)(@smithy/signature-v4@5.0.1)(@smithy/util-utf8@4.0.0)(@upstash/vector@1.2.0)(@zilliz/milvus2-sdk-node@2.5.5)(assemblyai@4.9.0)(axios@1.7.9)(cheerio@1.0.0-rc.12)(chromadb@1.10.3(@google/generative-ai@0.21.0)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(cohere-ai@7.15.4(encoding@0.1.13))(d3-dsv@3.0.1)(encoding@0.1.13)(fast-xml-parser@4.4.1)(google-auth-library@9.15.1(encoding@0.1.13))(handlebars@4.7.8)(html-to-text@9.0.5)(ibm-cloud-sdk-core@5.1.3)(ignore@7.0.3)(jsonwebtoken@9.0.2)(lodash@4.17.21)(mammoth@1.9.0)(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pdf-parse@1.1.1)(pg@8.13.3)(playwright@1.50.1)(portkey-ai@0.1.16)(replicate@1.0.1)(typeorm@0.3.20(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)))(ws@8.18.1)
       '@langchain/core':
         specifier: ^0.3.40
         version: 0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))
@@ -90,6 +90,9 @@ importers:
       '@libsql/linux-arm64-gnu':
         specifier: 0.5.0-pre.6
         version: 0.5.0-pre.6
+      '@libsql/linux-x64-gnu':
+        specifier: 0.5.0-pre.6
+        version: 0.5.0-pre.6
       '@mastra/client-js':
         specifier: ^0.1.1
         version: 0.1.2(encoding@0.1.13)(react@18.3.1)
@@ -98,7 +101,7 @@ importers:
         version: 0.3.0(encoding@0.1.13)(react@18.3.1)
       '@mastra/rag':
         specifier: ^0.1.3
-        version: 0.1.3(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(ai@4.1.45(react@18.3.1)(zod@3.24.2))(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gpt-tokenizer@2.8.1)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(react@18.3.1)(socks@2.8.4)(terser@5.39.0)(tree-sitter@0.22.1)(typescript@5.7.3)(web-tree-sitter@0.24.5)(ws@8.18.1)
+        version: 0.1.3(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@google/generative-ai@0.21.0)(@huggingface/transformers@3.3.3)(ai@4.1.45(react@18.3.1)(zod@3.24.2))(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gcp-metadata@6.1.1(encoding@0.1.13))(gpt-tokenizer@2.8.1)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(react@18.3.1)(socks@2.8.4)(terser@5.39.0)(tree-sitter@0.22.1)(typescript@5.7.3)(web-tree-sitter@0.24.5)(ws@8.18.1)
       '@preact/compat':
         specifier: ^18.3.1
         version: 18.3.1(preact@10.26.2)
@@ -227,7 +230,7 @@ importers:
         version: 0.16.21
       langchain:
         specifier: ^0.3.2
-        version: 0.3.19(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(axios@1.7.9)(encoding@0.1.13)(handlebars@4.7.8)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(typeorm@0.3.20(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)))(ws@8.18.1)
+        version: 0.3.19(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(axios@1.7.9)(cheerio@1.0.0-rc.12)(encoding@0.1.13)(handlebars@4.7.8)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(typeorm@0.3.20(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)))(ws@8.18.1)
       lexical:
         specifier: 0.17.1
         version: 0.17.1
@@ -452,7 +455,7 @@ importers:
         version: 2.1.0
       typeorm:
         specifier: ^0.3.20
-        version: 0.3.20(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3))
+        version: 0.3.20(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3))
       unfurl.js:
         specifier: ^6.4.0
         version: 6.4.0(encoding@0.1.13)
@@ -3072,6 +3075,11 @@ packages:
 
   '@libsql/linux-x64-gnu@0.4.7':
     resolution: {integrity: sha512-CMnNRCmlWQqqzlTw6NeaZXzLWI8bydaXDke63JTUCvu8R+fj/ENsLrVBtPDlxQ0wGsYdXGlrUCH8Qi9gJep0yQ==}
+    cpu: [x64]
+    os: [linux]
+
+  '@libsql/linux-x64-gnu@0.5.0-pre.6':
+    resolution: {integrity: sha512-IOSlRJWNUoEdtL9Y2RrGJyNR4X9t2aWTcbVkYMRtKfDIqylYO8UXDtMLFdLLnjR4p5yZKnO9OqOkbMko8DKdOw==}
     cpu: [x64]
     os: [linux]
 
@@ -16551,8 +16559,8 @@ snapshots:
 
   '@js-sdsl/ordered-map@4.4.2': {}
 
-  '@langchain/community@0.3.32(nkdmk65zsfttuzalraf2aoybnq)':
-    dependencies:
+  ? '@langchain/community@0.3.32(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/client-s3@3.693.0)(@aws-sdk/credential-provider-node@3.750.0)(@azure/search-documents@12.1.0)(@browserbasehq/sdk@2.3.0(encoding@0.1.13))(@browserbasehq/stagehand@1.13.0(@playwright/test@1.50.1)(deepmerge@4.3.1)(dotenv@16.4.7)(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(zod@3.24.2))(@datastax/astra-db-ts@1.5.0)(@huggingface/inference@2.8.1)(@huggingface/transformers@3.3.3)(@ibm-cloud/watsonx-ai@1.5.0(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))))(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(@libsql/client@0.14.0)(@notionhq/client@2.2.16(encoding@0.1.13))(@pinecone-database/pinecone@4.1.0)(@qdrant/js-client-rest@1.13.0(typescript@5.7.3))(@smithy/eventstream-codec@3.1.10)(@smithy/protocol-http@5.0.1)(@smithy/signature-v4@5.0.1)(@smithy/util-utf8@4.0.0)(@upstash/vector@1.2.0)(@zilliz/milvus2-sdk-node@2.5.5)(assemblyai@4.9.0)(axios@1.7.9)(cheerio@1.0.0-rc.12)(chromadb@1.10.3(@google/generative-ai@0.21.0)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(cohere-ai@7.15.4(encoding@0.1.13))(d3-dsv@3.0.1)(encoding@0.1.13)(fast-xml-parser@4.4.1)(google-auth-library@9.15.1(encoding@0.1.13))(handlebars@4.7.8)(html-to-text@9.0.5)(ibm-cloud-sdk-core@5.1.3)(ignore@7.0.3)(jsonwebtoken@9.0.2)(lodash@4.17.21)(mammoth@1.9.0)(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pdf-parse@1.1.1)(pg@8.13.3)(playwright@1.50.1)(portkey-ai@0.1.16)(replicate@1.0.1)(typeorm@0.3.20(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)))(ws@8.18.1)'
+  : dependencies:
       '@browserbasehq/stagehand': 1.13.0(@playwright/test@1.50.1)(deepmerge@4.3.1)(dotenv@16.4.7)(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(zod@3.24.2)
       '@ibm-cloud/watsonx-ai': 1.5.0(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))
       '@langchain/core': 0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))
@@ -16562,7 +16570,7 @@ snapshots:
       flat: 5.0.2
       ibm-cloud-sdk-core: 5.1.3
       js-yaml: 4.1.0
-      langchain: 0.3.19(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(axios@1.7.9)(encoding@0.1.13)(handlebars@4.7.8)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(typeorm@0.3.20(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)))(ws@8.18.1)
+      langchain: 0.3.19(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(axios@1.7.9)(cheerio@1.0.0-rc.12)(encoding@0.1.13)(handlebars@4.7.8)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(typeorm@0.3.20(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)))(ws@8.18.1)
       langsmith: 0.3.10(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))
       openai: 4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)
       uuid: 10.0.0
@@ -16581,25 +16589,31 @@ snapshots:
       '@notionhq/client': 2.2.16(encoding@0.1.13)
       '@pinecone-database/pinecone': 4.1.0
       '@qdrant/js-client-rest': 1.13.0(typescript@5.7.3)
-      '@smithy/util-utf8': 2.3.0
+      '@smithy/eventstream-codec': 3.1.10
+      '@smithy/protocol-http': 5.0.1
+      '@smithy/signature-v4': 5.0.1
+      '@smithy/util-utf8': 4.0.0
       '@upstash/vector': 1.2.0
       '@zilliz/milvus2-sdk-node': 2.5.5
       assemblyai: 4.9.0
-      chromadb: 1.10.3(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))
+      cheerio: 1.0.0-rc.12
+      chromadb: 1.10.3(@google/generative-ai@0.21.0)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))
       cohere-ai: 7.15.4(encoding@0.1.13)
+      d3-dsv: 3.0.1
       fast-xml-parser: 4.4.1
       google-auth-library: 9.15.1(encoding@0.1.13)
       html-to-text: 9.0.5
-      ignore: 5.3.2
+      ignore: 7.0.3
       jsonwebtoken: 9.0.2
       lodash: 4.17.21
       mammoth: 1.9.0
+      mongodb: 6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4)
       pdf-parse: 1.1.1
       pg: 8.13.3
       playwright: 1.50.1
       portkey-ai: 0.1.16
       replicate: 1.0.1
-      typeorm: 0.3.20(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3))
+      typeorm: 0.3.20(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3))
       ws: 8.18.1
     transitivePeerDependencies:
       - '@langchain/anthropic'
@@ -16704,6 +16718,8 @@ snapshots:
   '@libsql/linux-x64-gnu@0.4.7':
     optional: true
 
+  '@libsql/linux-x64-gnu@0.5.0-pre.6': {}
+
   '@libsql/linux-x64-musl@0.4.7':
     optional: true
 
@@ -16754,14 +16770,14 @@ snapshots:
       - pathe
       - tiktoken
 
-  '@llamaindex/azure@0.0.4(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(socks@2.8.4)':
+  '@llamaindex/azure@0.0.4(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(gcp-metadata@6.1.1(encoding@0.1.13))(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(socks@2.8.4)':
     dependencies:
       '@azure/cosmos': 4.2.0
       '@azure/identity': 4.7.0
       '@azure/search-documents': 12.1.0
       '@llamaindex/core': 0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
       '@llamaindex/env': 0.1.27(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
-      mongodb: 6.13.1(@aws-sdk/credential-providers@3.750.0)(socks@2.8.4)
+      mongodb: 6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4)
     transitivePeerDependencies:
       - '@aws-crypto/sha256-js'
       - '@aws-sdk/credential-providers'
@@ -16778,11 +16794,11 @@ snapshots:
       - supports-color
       - tiktoken
 
-  '@llamaindex/chroma@0.0.4(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pathe@2.0.3)':
+  '@llamaindex/chroma@0.0.4(@aws-crypto/sha256-js@5.2.0)(@google/generative-ai@0.21.0)(@huggingface/transformers@3.3.3)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pathe@2.0.3)':
     dependencies:
       '@llamaindex/core': 0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
       '@llamaindex/env': 0.1.27(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
-      chromadb: 1.10.3(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))
+      chromadb: 1.10.3(@google/generative-ai@0.21.0)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))
       chromadb-default-embed: 2.13.2
     transitivePeerDependencies:
       - '@aws-crypto/sha256-js'
@@ -16973,11 +16989,11 @@ snapshots:
       - pathe
       - tiktoken
 
-  '@llamaindex/mongodb@0.0.4(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(socks@2.8.4)':
+  '@llamaindex/mongodb@0.0.4(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(gcp-metadata@6.1.1(encoding@0.1.13))(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(socks@2.8.4)':
     dependencies:
       '@llamaindex/core': 0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
       '@llamaindex/env': 0.1.27(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
-      mongodb: 6.7.0(@aws-sdk/credential-providers@3.750.0)(socks@2.8.4)
+      mongodb: 6.7.0(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4)
     transitivePeerDependencies:
       - '@aws-crypto/sha256-js'
       - '@aws-sdk/credential-providers'
@@ -17089,7 +17105,7 @@ snapshots:
       - tiktoken
       - typescript
 
-  '@llamaindex/readers@1.0.25(@aws-sdk/credential-providers@3.750.0)(@llamaindex/core@0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(@llamaindex/env@0.1.27(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(encoding@0.1.13)(socks@2.8.4)':
+  '@llamaindex/readers@1.0.25(@aws-sdk/credential-providers@3.750.0)(@llamaindex/core@0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(@llamaindex/env@0.1.27(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(encoding@0.1.13)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4)':
     dependencies:
       '@azure/cosmos': 4.2.0
       '@discordjs/rest': 2.4.3
@@ -17100,7 +17116,7 @@ snapshots:
       csv-parse: 5.6.0
       discord-api-types: 0.37.119
       mammoth: 1.9.0
-      mongodb: 6.13.1(@aws-sdk/credential-providers@3.750.0)(socks@2.8.4)
+      mongodb: 6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4)
       notion-md-crawler: 1.0.1(encoding@0.1.13)
       papaparse: 5.5.2
       unpdf: 0.12.1(encoding@0.1.13)
@@ -17291,7 +17307,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@mastra/rag@0.1.3(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(ai@4.1.45(react@18.3.1)(zod@3.24.2))(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gpt-tokenizer@2.8.1)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(react@18.3.1)(socks@2.8.4)(terser@5.39.0)(tree-sitter@0.22.1)(typescript@5.7.3)(web-tree-sitter@0.24.5)(ws@8.18.1)':
+  '@mastra/rag@0.1.3(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@google/generative-ai@0.21.0)(@huggingface/transformers@3.3.3)(ai@4.1.45(react@18.3.1)(zod@3.24.2))(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gcp-metadata@6.1.1(encoding@0.1.13))(gpt-tokenizer@2.8.1)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(react@18.3.1)(socks@2.8.4)(terser@5.39.0)(tree-sitter@0.22.1)(typescript@5.7.3)(web-tree-sitter@0.24.5)(ws@8.18.1)':
     dependencies:
       '@llamaindex/core': 0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
       '@llamaindex/env': 0.1.28(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
@@ -17299,7 +17315,7 @@ snapshots:
       '@paralleldrive/cuid2': 2.2.2
       ai: 4.1.45(react@18.3.1)(zod@3.24.2)
       js-tiktoken: 1.0.19
-      llamaindex: 0.8.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(js-tiktoken@1.0.19)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pathe@2.0.3)(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(socks@2.8.4)(terser@5.39.0)(tree-sitter@0.22.1)(typescript@5.7.3)(web-tree-sitter@0.24.5)(ws@8.18.1)(zod@3.24.2)
+      llamaindex: 0.8.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@google/generative-ai@0.21.0)(@huggingface/transformers@3.3.3)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gcp-metadata@6.1.1(encoding@0.1.13))(js-tiktoken@1.0.19)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pathe@2.0.3)(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(socks@2.8.4)(terser@5.39.0)(tree-sitter@0.22.1)(typescript@5.7.3)(web-tree-sitter@0.24.5)(ws@8.18.1)(zod@3.24.2)
       node-html-better-parser: 1.4.7
       pathe: 2.0.3
       zod: 3.24.2
@@ -21778,11 +21794,12 @@ snapshots:
     optionalDependencies:
       onnxruntime-node: 1.14.0
 
-  chromadb@1.10.3(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)):
+  chromadb@1.10.3(@google/generative-ai@0.21.0)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)):
     dependencies:
       cliui: 8.0.1
       isomorphic-fetch: 3.0.0(encoding@0.1.13)
     optionalDependencies:
+      '@google/generative-ai': 0.21.0
       cohere-ai: 7.15.4(encoding@0.1.13)
       openai: 4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)
     transitivePeerDependencies:
@@ -23788,7 +23805,7 @@ snapshots:
       isstream: 0.1.2
       jsonwebtoken: 9.0.2
       mime-types: 2.1.35
-      retry-axios: 2.6.0(axios@1.7.9)
+      retry-axios: 2.6.0(axios@1.7.9(debug@4.4.0))
       tough-cookie: 4.1.4
     transitivePeerDependencies:
       - supports-color
@@ -24295,7 +24312,7 @@ snapshots:
 
   kuler@2.0.0: {}
 
-  langchain@0.3.19(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(axios@1.7.9)(encoding@0.1.13)(handlebars@4.7.8)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(typeorm@0.3.20(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)))(ws@8.18.1):
+  langchain@0.3.19(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(axios@1.7.9)(cheerio@1.0.0-rc.12)(encoding@0.1.13)(handlebars@4.7.8)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(typeorm@0.3.20(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)))(ws@8.18.1):
     dependencies:
       '@langchain/core': 0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))
       '@langchain/openai': 0.4.4(@langchain/core@0.3.40(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2)))(encoding@0.1.13)(ws@8.18.1)
@@ -24312,8 +24329,9 @@ snapshots:
       zod-to-json-schema: 3.24.3(zod@3.24.2)
     optionalDependencies:
       axios: 1.7.9(debug@4.4.0)
+      cheerio: 1.0.0-rc.12
       handlebars: 4.7.8
-      typeorm: 0.3.20(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3))
+      typeorm: 0.3.20(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3))
     transitivePeerDependencies:
       - encoding
       - openai
@@ -24382,12 +24400,12 @@ snapshots:
     dependencies:
       uc.micro: 2.1.0
 
-  llamaindex@0.8.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(js-tiktoken@1.0.19)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pathe@2.0.3)(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(socks@2.8.4)(terser@5.39.0)(tree-sitter@0.22.1)(typescript@5.7.3)(web-tree-sitter@0.24.5)(ws@8.18.1)(zod@3.24.2):
+  llamaindex@0.8.37(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@google/generative-ai@0.21.0)(@huggingface/transformers@3.3.3)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gcp-metadata@6.1.1(encoding@0.1.13))(js-tiktoken@1.0.19)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pathe@2.0.3)(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(socks@2.8.4)(terser@5.39.0)(tree-sitter@0.22.1)(typescript@5.7.3)(web-tree-sitter@0.24.5)(ws@8.18.1)(zod@3.24.2):
     dependencies:
       '@llamaindex/anthropic': 0.0.33(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(@types/node@22.13.5)(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(terser@5.39.0)
       '@llamaindex/astra': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
-      '@llamaindex/azure': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(socks@2.8.4)
-      '@llamaindex/chroma': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pathe@2.0.3)
+      '@llamaindex/azure': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(gcp-metadata@6.1.1(encoding@0.1.13))(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(socks@2.8.4)
+      '@llamaindex/chroma': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@google/generative-ai@0.21.0)(@huggingface/transformers@3.3.3)(cohere-ai@7.15.4(encoding@0.1.13))(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(openai@4.85.4(encoding@0.1.13)(ws@8.18.1)(zod@3.24.2))(pathe@2.0.3)
       '@llamaindex/clip': 0.0.35(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(ws@8.18.1)(zod@3.24.2)
       '@llamaindex/cloud': 2.0.24(@llamaindex/core@0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(@llamaindex/env@0.1.27(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))
       '@llamaindex/cohere': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
@@ -24400,7 +24418,7 @@ snapshots:
       '@llamaindex/milvus': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
       '@llamaindex/mistral': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(zod@3.24.2)
       '@llamaindex/mixedbread': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
-      '@llamaindex/mongodb': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(socks@2.8.4)
+      '@llamaindex/mongodb': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@aws-sdk/credential-providers@3.750.0)(@huggingface/transformers@3.3.3)(gcp-metadata@6.1.1(encoding@0.1.13))(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(socks@2.8.4)
       '@llamaindex/node-parser': 0.0.24(@llamaindex/core@0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(@llamaindex/env@0.1.27(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(tree-sitter@0.22.1)(web-tree-sitter@0.24.5)
       '@llamaindex/ollama': 0.0.39(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
       '@llamaindex/openai': 0.1.51(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(ws@8.18.1)(zod@3.24.2)
@@ -24408,7 +24426,7 @@ snapshots:
       '@llamaindex/portkey-ai': 0.0.32(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
       '@llamaindex/postgres': 0.0.32(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)
       '@llamaindex/qdrant': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(typescript@5.7.3)
-      '@llamaindex/readers': 1.0.25(@aws-sdk/credential-providers@3.750.0)(@llamaindex/core@0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(@llamaindex/env@0.1.27(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(encoding@0.1.13)(socks@2.8.4)
+      '@llamaindex/readers': 1.0.25(@aws-sdk/credential-providers@3.750.0)(@llamaindex/core@0.4.23(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(@llamaindex/env@0.1.27(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3))(encoding@0.1.13)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4)
       '@llamaindex/replicate': 0.0.32(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
       '@llamaindex/upstash': 0.0.4(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)
       '@llamaindex/vllm': 0.0.21(@aws-crypto/sha256-js@5.2.0)(@huggingface/transformers@3.3.3)(encoding@0.1.13)(gpt-tokenizer@2.8.1)(js-tiktoken@1.0.19)(pathe@2.0.3)(ws@8.18.1)(zod@3.24.2)
@@ -25298,22 +25316,24 @@ snapshots:
       '@types/whatwg-url': 11.0.5
       whatwg-url: 14.1.1
 
-  mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(socks@2.8.4):
+  mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4):
     dependencies:
       '@mongodb-js/saslprep': 1.2.0
       bson: 6.10.3
       mongodb-connection-string-url: 3.0.2
     optionalDependencies:
       '@aws-sdk/credential-providers': 3.750.0
+      gcp-metadata: 6.1.1(encoding@0.1.13)
       socks: 2.8.4
 
-  mongodb@6.7.0(@aws-sdk/credential-providers@3.750.0)(socks@2.8.4):
+  mongodb@6.7.0(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4):
     dependencies:
       '@mongodb-js/saslprep': 1.2.0
       bson: 6.10.3
       mongodb-connection-string-url: 3.0.2
     optionalDependencies:
       '@aws-sdk/credential-providers': 3.750.0
+      gcp-metadata: 6.1.1(encoding@0.1.13)
       socks: 2.8.4
 
   motion-dom@11.18.1:
@@ -27227,7 +27247,7 @@ snapshots:
 
   ret@0.2.2: {}
 
-  retry-axios@2.6.0(axios@1.7.9):
+  retry-axios@2.6.0(axios@1.7.9(debug@4.4.0)):
     dependencies:
       axios: 1.7.9(debug@4.4.0)
 
@@ -28374,7 +28394,7 @@ snapshots:
     optionalDependencies:
       rxjs: 7.8.2
 
-  typeorm@0.3.20(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)):
+  typeorm@0.3.20(mongodb@6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4))(pg-query-stream@4.7.1(pg@8.13.3))(pg@8.13.3)(sqlite3@5.1.7)(ts-node@10.9.2(@types/node@20.2.5)(typescript@5.7.3)):
     dependencies:
       '@sqltools/formatter': 1.2.5
       app-root-path: 3.1.0
@@ -28392,6 +28412,7 @@ snapshots:
       uuid: 9.0.1
       yargs: 17.7.2
     optionalDependencies:
+      mongodb: 6.13.1(@aws-sdk/credential-providers@3.750.0)(gcp-metadata@6.1.1(encoding@0.1.13))(socks@2.8.4)
       pg: 8.13.3
       pg-query-stream: 4.7.1(pg@8.13.3)
       sqlite3: 5.1.7
