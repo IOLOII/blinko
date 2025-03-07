@@ -1,20 +1,24 @@
-import { BufferLoader } from "langchain/document_loaders/fs/buffer";
-import { createOllama } from 'ollama-ai-provider';
-import { AiBaseModelPrivider } from ".";
+import { BufferLoader } from 'langchain/document_loaders/fs/buffer';
+import { createOllama, OllamaProvider } from 'ollama-ai-provider';
+import { AiBaseModelPrivider } from '.';
 
 export class OllamaModelProvider extends AiBaseModelPrivider {
   constructor({ globalConfig }) {
     super({ globalConfig });
     this.provider = createOllama({
-      baseURL: this.globalConfig.aiApiEndpoint.trim(),
+      baseURL: !!this.globalConfig.aiApiEndpoint ? this.globalConfig.aiApiEndpoint.trim() : undefined,
     });
   }
 
   LLM() {
     try {
-      return this.provider.languageModel(this.globalConfig.aiModel ?? 'llama2')
+      console.log(this.globalConfig.aiModel);
+      const provider = this.provider as OllamaProvider;
+      return provider.chat(this.globalConfig.aiModel, {
+        simulateStreaming: true,
+      });
     } catch (error) {
-      throw error
+      throw error;
     }
   }
 

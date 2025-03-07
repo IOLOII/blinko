@@ -447,5 +447,11 @@
   "tavily-api-key": "Chave da API de Pesquisa Tavily",
   "tavily-max-results": "Resultados Máximos de Tavily",
   "ai-prompt-writing-content": "Escreva um artigo de 200 palavras e salve-o em suas anotações",
-  "ai-prompt-coding-content": "Extraindo o conteúdo da web https://github.com/blinko-space/blinko"
+  "ai-prompt-coding-content": "Extraindo o conteúdo da web https://github.com/blinko-space/blinko",
+  "stop-task": "Interromper tarefa",
+  "processing": "Processamento",
+  "there-is-a-rebuild-task-in-progress-do-you-want-to-restart": "Há uma tarefa de reconstrução em andamento, deseja reiniciar?",
+  "hide-blog-images": "Ocultar imagens do blog",
+  "ai-prompt-translation-content": "Verifique as notas NO Tags nos últimos dois dias e marque -as.",
+  "ai-prompt-delete-content": "Encontre 2 notas arquivadas, resuma e salve -as como novas notas e exclua essas duas notas arquivadas"
 }

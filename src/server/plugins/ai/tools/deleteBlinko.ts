@@ -3,16 +3,15 @@ import { NoteType } from '@/server/types';
 import { createTool } from '@mastra/core/tools';
 import { z } from 'zod';
 
-export const upsertBlinkoTool = createTool({
-  id: 'upsert-blinko-tool',
-  description: 'you are a blinko assistant,you can use api to create blinko,save to database',
+export const deleteBlinkoTool = createTool({
+  id: 'delete-blinko-tool',
+  description: 'you are a blinko assistant,you can use api to delete blinko,save to database',
   //@ts-ignore
   inputSchema: z.object({
-    content: z.string().describe("Tag is start with #"),
     accountId: z.number(),
+    ids: z.array(z.number())
   }),
   execute: async ({ context }) => {
-    console.log(`create note:${context.content}`);
     try {
       const caller = userCaller({
         id: context.accountId.toString(),
@@ -22,11 +21,9 @@ export const upsertBlinkoTool = createTool({
         sub: context.accountId.toString(),
         role: 'superadmin'
       })
-      const note = await caller.notes.upsert({
-        content: context.content,
-        type: NoteType.BLINKO,
+      const note = await caller.notes.trashMany({
+        ids: context.ids
       })
-      console.log(note)
       return true
     } catch (error) {
       console.log(error)

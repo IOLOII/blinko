@@ -45,7 +45,8 @@ export const ZUserPerferConfigKey = z.union([
   z.literal('isCloseDailyReview'),
   z.literal('maxHomePageWidth'),
   z.literal('isUseBlinkoHub'),
-  z.literal('isHiddenNotification')
+  z.literal('isHiddenNotification'),
+  z.literal('isHideBlogImages')
 ]);
 
 export const ZConfigKey = z.union([
@@ -152,6 +153,7 @@ export const ZConfigSchema = z.object({
   isHiddenNotification: z.boolean().optional(),
   tavilyApiKey: z.string().optional(),
   tavilyMaxResult: z.number().optional(),
+  isHideBlogImages: z.boolean().optional()
 });
 
 export type GlobalConfig = z.infer<typeof ZConfigSchema>;
@@ -170,9 +172,9 @@ export const pluginInfoSchema = z.object({
 });
 
 // Schema for plugin installation input (subset of PluginInfo)
-export const installPluginSchema = pluginInfoSchema.omit({ 
+export const installPluginSchema = pluginInfoSchema.omit({
   readme: true,
-  downloads: true 
+  downloads: true
 });
 
 // TypeScript types derived from the schemas

@@ -1,3 +1,63 @@
+## [0.42.4](https://github.com/blinko-space/blinko/compare/v0.42.3...v0.42.4) (2025-03-06)
+
+
+### Bug Fixes
+
+* rag ai enhance ([2fa83c7](https://github.com/blinko-space/blinko/commit/2fa83c78354bc3ea0a9a88cb038bad5cdfbedaa4))
+
+## [0.42.3](https://github.com/blinko-space/blinko/compare/v0.42.2...v0.42.3) (2025-03-06)
+
+
+### Bug Fixes
+
+* C++ tag regExp issue ([#526](https://github.com/blinko-space/blinko/issues/526)) ([cf493ec](https://github.com/blinko-space/blinko/commit/cf493ec7b896497e7bd1148a155f94c6c40c08ab))
+* improve ai ([8c557d8](https://github.com/blinko-space/blinko/commit/8c557d80b5a540cb0b0c3e234a348f29441f90ad))
+* support openRouter provider ([#522](https://github.com/blinko-space/blinko/issues/522)) ([0cf07d4](https://github.com/blinko-space/blinko/commit/0cf07d4988d071689be1dc59838f53cf93f8c536))
+
+## [0.42.2](https://github.com/blinko-space/blinko/compare/v0.42.1...v0.42.2) (2025-03-05)
+
+
+### Bug Fixes
+
+* ui improve & ai prompt improve ([15c8d74](https://github.com/blinko-space/blinko/commit/15c8d74fdb656c9ddbdf9bb97b4f31ccf470b2b4))
+
+## [0.42.1](https://github.com/blinko-space/blinko/compare/v0.42.0...v0.42.1) (2025-03-05)
+
+
+### Bug Fixes
+
+* support isHideBlogImages ([5c33e64](https://github.com/blinko-space/blinko/commit/5c33e64db7b772ce0d17ce3887b1b156c8a76780))
+
+# [0.42.0](https://github.com/blinko-space/blinko/compare/v0.41.13...v0.42.0) (2025-03-02)
+
+
+### Features
+
+* **ai:** Add support for additional embedding dimensions in AiModelFactory ([9155ea6](https://github.com/blinko-space/blinko/commit/9155ea6e998c6496c6f2a56bdc07fee377cfa7a1))
+* **settings:** Set custom background URL input only for "superadmin" ([dbe8acf](https://github.com/blinko-space/blinko/commit/dbe8acf20267ae978c1f36975143864836ea248a))
+
+## [0.41.13](https://github.com/blinko-space/blinko/compare/v0.41.12...v0.41.13) (2025-03-01)
+
+
+### Bug Fixes
+
+* Simplify isImage function visibility in file route handlers ([287289f](https://github.com/blinko-space/blinko/commit/287289f03969c8388a5b1914fcaf349128abf7fe))
+
+## [0.41.12](https://github.com/blinko-space/blinko/compare/v0.41.11...v0.41.12) (2025-03-01)
+
+
+### Bug Fixes
+
+* **ai:** Enhance embedding rebuild process with real-time progress tracking ([c84c15e](https://github.com/blinko-space/blinko/commit/c84c15e169b587c54623e1e693cfc43f2a633bae))
+* pin vditor to exact version 3.10.8 ([b3f817f](https://github.com/blinko-space/blinko/commit/b3f817f1172a3e2b70edce867b5327d535a60dbe))
+
+## [0.41.11](https://github.com/blinko-space/blinko/compare/v0.41.10...v0.41.11) (2025-02-28)
+
+
+### Bug Fixes
+
+* **ai:** improve embedding dimension handling and Ollama provider configuration ([916034f](https://github.com/blinko-space/blinko/commit/916034fc42a0a9484b35d8fa3b2ca5b43d665696))
+
 ## [0.41.10](https://github.com/blinko-space/blinko/compare/v0.41.9...v0.41.10) (2025-02-27)
 
 

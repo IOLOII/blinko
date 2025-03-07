@@ -1,5 +1,5 @@
 import { observer } from "mobx-react-lite";
-import { Card, DropdownItem, DropdownMenu, DropdownTrigger, Dropdown, Select, SelectItem, Switch, Button, Input, Tooltip } from "@heroui/react";
+import { Switch, Input, Tooltip } from "@heroui/react";
 import { useTranslation } from "react-i18next";
 import { Item, ItemWithTooltip, SelectDropdown } from "./Item";
 import ThemeSwitcher from "../Common/Theme/ThemeSwitcher";
@@ -13,6 +13,7 @@ import { useState, useEffect } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { CollapsibleCard } from "../Common/CollapsibleCard";
 import { GradientBackground } from "../Common/GradientBackground";
+import { UserStore } from "@/store/user";
 
 export const PerferSetting = observer(() => {
   const { t } = useTranslation()
@@ -21,6 +22,7 @@ export const PerferSetting = observer(() => {
   const [textLength, setTextLength] = useState(blinko.config.value?.textFoldLength?.toString() || '500');
   const [maxHomePageWidth, setMaxHomePageWidth] = useState(blinko.config.value?.maxHomePageWidth?.toString() || '0');
   const [customBackgroundUrl, setCustomBackgroundUrl] = useState(blinko.config.value?.customBackgroundUrl || '');
+  const user = RootStore.Get(UserStore)
 
   useEffect(() => {
     setTextLength(blinko.config.value?.textFoldLength?.toString() || '500');
@@ -80,7 +82,7 @@ export const PerferSetting = observer(() => {
           value: value
         }))
       }} />} />
-      
+
     <Item
       leftContent={<>{t('hide-notification')}</>}
       rightContent={<Switch
@@ -113,6 +115,20 @@ export const PerferSetting = observer(() => {
         onChange={e => {
           PromiseCall(api.config.update.mutate({
             key: 'isOrderByCreateTime',
+            value: e.target.checked
+          }))
+        }}
+      />} />
+
+    <Item
+      leftContent={<div className="flex flex-col">
+        <div>{t('hide-blog-images')}</div>
+      </div>}
+      rightContent={<Switch
+        isSelected={blinko.config.value?.isHideBlogImages}
+        onChange={e => {
+          PromiseCall(api.config.update.mutate({
+            key: 'isHideBlogImages',
             value: e.target.checked
           }))
         }}
@@ -351,26 +367,31 @@ export const PerferSetting = observer(() => {
         </Tooltip>
       } />
 
-    <Item
-      type={isPc ? 'row' : 'col'}
-      leftContent={<div className="flex flex-col">
-        <div>{t('custom-background-url')}</div>
-        <div className="text-xs text-default-400">{t('custom-bg-tip')}</div>
-      </div>}
-      rightContent={<Input
-        className="w-full md:w-[400px]"
-        placeholder="https://www.shadergradient.co/customize?"
-        type="text"
-        value={customBackgroundUrl}
-        onChange={e => {
-          setCustomBackgroundUrl(e.target.value)
-        }}
-        onBlur={e => {
-          PromiseCall(api.config.update.mutate({
-            key: 'customBackgroundUrl',
-            value: customBackgroundUrl
-          }), { autoAlert: false })
-        }} />} />
+    {
+      user.isSuperAdmin && (
+      <Item
+        type={isPc ? 'row' : 'col'}
+        leftContent={<div className="flex flex-col">
 
+
+          <div>{t('custom-background-url')}</div>
+          <div className="text-xs text-default-400">{t('custom-bg-tip')}</div>
+        </div>}
+        rightContent={<Input
+          className="w-full md:w-[400px]"
+          placeholder="https://www.shadergradient.co/customize?"
+          type="text"
+          value={customBackgroundUrl}
+          onChange={e => {
+            setCustomBackgroundUrl(e.target.value)
+          }}
+          onBlur={e => {
+            PromiseCall(api.config.update.mutate({
+              key: 'customBackgroundUrl',
+              value: customBackgroundUrl
+            }), { autoAlert: false })
+          }} />} />
+      )
+    }
   </CollapsibleCard>
 })

@@ -538,5 +538,11 @@
   "tavily-api-key": "Klucz API do wyszukiwarki Tavily",
   "tavily-max-results": "Maksymalne Wyniki Tavily",
   "ai-prompt-writing-content": "Napisz artykuł o długości 200 słów i zapisz go w swoich notatkach.",
-  "ai-prompt-coding-content": "Wyodrębnianie zawartości strony internetowej https://github.com/blinko-space/blinko"
+  "ai-prompt-coding-content": "Wyodrębnianie zawartości strony internetowej https://github.com/blinko-space/blinko",
+  "stop-task": "Zatrzymaj zadanie",
+  "processing": "Przetwarzanie",
+  "there-is-a-rebuild-task-in-progress-do-you-want-to-restart": "Trwa zadanie przebudowy, czy chcesz zrestartować?",
+  "hide-blog-images": "Ukryj obrazy na blogu",
+  "ai-prompt-translation-content": "Sprawdź notatki No Tags w ciągu ostatnich dwóch dni i oznacz je.",
+  "ai-prompt-delete-content": "Znajdź 2 zarchiwizowane notatki, podsumuj i zapisz je jako nowe notatki i usuń te dwie zarchiwizowane notatki"
 }
