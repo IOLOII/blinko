@@ -1,3 +1,31 @@
+## [0.43.3](https://github.com/blinko-space/blinko/compare/v0.43.2...v0.43.3) (2025-03-09)
+
+
+### Bug Fixes
+
+* add user login endpoint with authentication and token generation ([e49ba58](https://github.com/blinko-space/blinko/commit/e49ba58125fae9303c5c048b9b30ec22ca97c13c))
+
+## [0.43.2](https://github.com/blinko-space/blinko/compare/v0.43.1...v0.43.2) (2025-03-08)
+
+
+### Bug Fixes
+
+* update plugin api ([eaa126b](https://github.com/blinko-space/blinko/commit/eaa126bf3e3f2b5b86283abdb595ae149baa8227))
+
+## [0.43.1](https://github.com/blinko-space/blinko/compare/v0.43.0...v0.43.1) (2025-03-07)
+
+
+### Bug Fixes
+
+* type error ([37b866e](https://github.com/blinko-space/blinko/commit/37b866eadad228d1b4da900cb3e41c4970f99861))
+
+# [0.43.0](https://github.com/blinko-space/blinko/compare/v0.42.4...v0.43.0) (2025-03-07)
+
+
+### Features
+
+* support note history ([10043bc](https://github.com/blinko-space/blinko/commit/10043bc867b1f6bd84d9706766026543fca50d03))
+
 ## [0.42.4](https://github.com/blinko-space/blinko/compare/v0.42.3...v0.42.4) (2025-03-06)
 
 
